@@ -3,9 +3,9 @@
 class Car
 {
 
-    public static string Brand { get; set; }
-    public static string Model { get; set; }
-    public static int Year { get; set; }
+    public string Brand { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
 
     public Car(string brand, string model, int year)
     {
@@ -15,7 +15,7 @@ class Car
     }
 
     // Talk about car
-    public static void TalkAboutCar()
+    public void TalkAboutCar()
     { 
     Console.WriteLine("You have a " + Brand + " " + Model + " from " + Year + "!");
     }
@@ -29,10 +29,11 @@ class Program
     {
         // Make new car
         Car mrapansCar = new Car("Skoda", "Octavia", 2000); 
-        Car LinhsCar = new Car("Koenigsegg", "CCX", "2013");
+        Car LinhsCar = new Car("Koenigsegg", "CCX", 2013);
 
         // Tell what car we made
-        Car.TalkAboutCar();
-            LinhsCar.TalkAboutCar();
+        mrapansCar.TalkAboutCar();
+        LinhsCar.TalkAboutCar();
+
     }
 }
