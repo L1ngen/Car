@@ -29,8 +29,10 @@ class Program
     {
         // Make new car
         Car mrapansCar = new Car("Skoda", "Octavia", 2000); 
+        Car LinhsCar = new Car("Koenigsegg", "CCX", "2013");
 
         // Tell what car we made
         Car.TalkAboutCar();
+            LinhsCar.TalkAboutCar();
     }
 }
